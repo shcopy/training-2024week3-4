@@ -1,6 +1,6 @@
 /**** start of collaborative-design-glass ****/
 .collaborative-design-glass {
-    background-image: url('./assets/images/index-bg.png');
+    background-image: url('../assets/images/index-bg.png');
 
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -19,7 +19,7 @@
     .home-section4-1 {
         max-width: 100%;
         height: 240px;
-        background-image: url('./assets/images/home-section4-1.png');
+        background-image: url('../assets/images/home-section4-1.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -28,7 +28,7 @@
     .home-section4-2 {
         max-width: 100%;
         height: 240px;
-        background-image: url('./assets/images/home-section4-2.png');
+        background-image: url('../assets/images/home-section4-2.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 // max-width:768 (寬度<= 768)
 @include media-breakpoint-down(md) {
 	.collaborative-design-glass  {
-        background-image: url('./assets/images/index-bg-md.png');
+        background-image: url('../assets/images/index-bg-md.png');
         
         .card {
             display: flex;
