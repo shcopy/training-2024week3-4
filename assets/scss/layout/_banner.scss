@@ -1,0 +1,62 @@
+.banner {
+	// height: 787px;
+	background-image: url('../assets/images/home-header.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.banner_inner {
+		padding-top: 296px;
+		padding-bottom: 296px;
+
+		text-align: right;
+
+		h2 {
+			color: $danger;
+			font-size: 36px;
+            font-weight: bold;
+		}
+		p {
+			color: $danger;
+			font-size: 64px;
+			font-weight: bold;
+		}
+	}
+}
+
+// max-width-990  (寬度<= 990)
+@include media-breakpoint-down(lg) {}
+
+// max-width:768 (寬度<= 768)
+@include media-breakpoint-down(md) {
+    .banner {
+        // height: 396px;
+        background-image: url('../assets/images/home-header-sm.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .banner_inner {
+            padding-top: 144px;
+            padding-bottom: 144px;
+    
+            text-align: right;
+    
+            h2 {
+                color: $danger;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            p {
+                color: $danger;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// max-width:768 (寬度<= 576)
+@include media-breakpoint-down(sm) {
+    
+}

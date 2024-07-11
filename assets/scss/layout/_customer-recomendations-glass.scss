@@ -1,0 +1,93 @@
+/**** start of customer-recomendations-glass ****/
+.customer-recomendations-glass {
+
+	padding-top: 80px ;
+	padding-bottom: 80px ;
+
+	.card {
+		display: flex ;
+		flex-direction: row ;
+		flex-wrap: wrap ;
+	}
+
+	.card-item {
+		display: block ;
+		width: 25% ; // 4欄式排版
+		padding-left: 12px ;
+		padding-right: 12px ;
+	}
+
+
+    // 這裡的圖形寬高比例需要調整修正
+    .card-item img {
+		max-width: 306px;
+		height: auto ;
+        margin: 0 auto;
+	}
+
+	/** 選單的最左邊及最右邊距離歸零 **/
+	.card-item:first-child {
+		padding-left: 0 ;
+	}
+
+	.card-item:last-child {
+		padding-right: 0 ;
+	}
+
+	.card-body h3 {
+		color: $black;
+	}
+
+	.card-body p {
+		color: $black;
+	}
+
+    .card-footer {
+
+    }
+
+    .card-footer .date {
+
+    }
+}
+// max-width-1400  (寬度<= 1400)
+@include media-breakpoint-down(xxl) {
+	.customer-recomendations-glass {
+		.card-item {
+			width: 50% ; // 4欄式排版
+		}
+    }
+}
+
+// max-width-1200  (寬度<= 1200)
+@include media-breakpoint-down(xl) {
+	.customer-recomendations-glass {}
+}
+
+// max-width-990  (寬度<= 990)
+@include media-breakpoint-down(lg) {
+	.customer-recomendations-glass {}
+}
+
+// max-width:768 (寬度<= 768)
+@include media-breakpoint-down(md) {
+	.customer-recomendations-glass {
+        .card-item {
+			width: 100% ; // 4欄式排版
+		}
+
+        .card-item img {
+            max-width: 100%;
+            height: auto ;
+            margin: 0 auto;
+        }
+    }
+}
+
+// max-width:768 (寬度<= 576)
+@include media-breakpoint-down(sm) {
+	.customer-recomendations-glass {
+
+	}
+}
+/**** end of professional ****/

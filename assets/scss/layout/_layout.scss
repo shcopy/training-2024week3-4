@@ -1,0 +1,21 @@
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+
+	// pad
+	@include md {
+		max-width: 768px;
+		// background-color: yellow !important;
+		padding-left: 36px;
+		padding-right: 36px;
+    }
+
+	// mobile
+	@include sd {
+		width: 100% !important;
+		// background-color: green !important;
+
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}

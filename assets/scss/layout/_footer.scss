@@ -1,0 +1,258 @@
+.footer {
+	background: $primary;
+
+	.footer-inner {}
+
+	.footer-contact {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 32px;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.footer-contact {
+			margin-bottom: 20px;
+		}
+	}
+
+	// start of footerbar
+	.footerbar-nav {
+		display: flex;
+		margin-bottom: 38px;
+		margin-top: 60px;
+	}
+
+	// 當轉變為手機板時隱藏區塊
+	@include media-breakpoint-down(sd) {
+		// moible
+		.footerbar-nav {
+			display: none;
+		}
+	}
+
+	.footerbar-item {
+		margin-right: 48px;
+	}
+
+	// 抓取子層內的第一個子元素
+	.footerbar-item:first-child {}
+
+	// 抓取子層內的最後一個子元素。
+	.footerbar-item:last-child {
+		margin-right: 0;
+	}
+
+	.footerbar-link {
+		display: block;
+		font-size: 16px;
+		color: $white;
+	}
+
+	.footerbar-link:hover {}
+	// end of footerbar
+
+	// start of socialbar
+	.socialbar-nav {
+		display: flex;
+		margin-top: 48px;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.socialbar-nav {
+			margin-top: 24px;
+		}
+	}
+
+	.socialbar-item {
+		margin-right: 32px;
+
+		img {
+			width: 48px;
+		}
+	}
+
+	// 抓取子層內的第一個子元素
+	.socialbar-item:first-child {}
+
+	// 抓取子層內的最後一個子元素。
+	.socialbar-item:last-child {
+		margin-right: 0;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.socialbar-item {
+			margin-right: 8px;
+
+			img {
+				width: 24px;
+			}
+		}
+	}
+
+	.socialbar-link {
+		display: block;
+	}
+	// end of socialbar
+
+
+	// start of contact
+	.contact {
+		padding-top: 24px;
+		padding-bottom: 32px;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.contact {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.contactbar-nav {}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.contactbar-nav {
+			margin-top: 24px;
+		}
+	}
+
+
+	.contactbar-item {
+		margin-bottom: 8px;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.contactbar-item {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	// 抓取子層內的最後一個子元素。
+	.contactbar-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.contactbar-link {
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		font-size: 36px;
+		color: $white;
+		display: flex;
+		align-items: center;
+
+		.material-icons-outlined {
+			font-size: 36px;
+			margin-right: 22px;
+		}
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.contactbar-link {
+			font-size: 16px;
+			.material-icons-outlined {
+				font-size: 16px;
+				margin-right: 11px;
+			}
+		}
+	}
+	// end of contact
+
+	// start of copyright
+	.copyright {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		border-top: 1px solid $white;
+	}
+
+	@include media-breakpoint-down(sd) {
+		// moible
+		.copyright {
+			display: block;
+			padding-top: 16px;
+			padding-bottom: 8px;
+		}
+	}
+
+	.copyright_inner {}
+
+	.copyright_inner p {
+		color: $white;
+	}
+
+	.copyrightbar-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// moible
+	@include media-breakpoint-down(sd) {
+		.copyrightbar-nav {
+			display: block;
+			margin-top: 8px;
+		}
+	}
+
+	.copyrightbar-item {
+		margin-right: 48px;
+	}
+
+	// moible
+	@include media-breakpoint-down(sd) {
+
+		.copyrightbar-item {
+			margin-right: 0;
+			margin-bottom: 8px;
+		}
+	}
+
+	// 抓取子層內的第一個子元素
+	.copyrightbar-item:first-child {}
+
+	// 抓取子層內的最後一個子元素。
+	.copyrightbar-item:last-child {
+		margin-right: 0;
+	}
+
+	// moible
+	@include media-breakpoint-down(sd) {
+		
+		.copyrightbar-item:last-child {
+			margin-bottom: 24px;
+		}
+	}
+
+	.copyrightbar-link {
+		display: block;
+		color: $white;
+		font-size: 14px;
+	};
+	// end of copyright
+}
+
+
+// max-width-990  (寬度<= 990)
+@include media-breakpoint-down(lg) {
+	
+}
+
+// max-width:768 (寬度<= 768)
+@include media-breakpoint-down(md) {
+
+}
+
+// max-width:768 (寬度<= 576)
+@include media-breakpoint-down(sm) {
+
+}
