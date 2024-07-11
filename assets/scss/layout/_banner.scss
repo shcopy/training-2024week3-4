@@ -1,6 +1,6 @@
 .banner {
 	// height: 787px;
-	background-image: url('../assets/images/home-header.png');
+	background-image: url('./assets/images/home-header.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 @include media-breakpoint-down(md) {
     .banner {
         // height: 396px;
-        background-image: url('../assets/images/home-header-sm.png');
+        background-image: url('./assets/images/home-header-sm.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
