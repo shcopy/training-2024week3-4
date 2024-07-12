@@ -5,8 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp');
 
-
-
 // ------------------- Start of Configuration -------------------
 // Import Bootstrap's functions first
 @import '../../node_modules/bootstrap/scss/functions';
@@ -21,8 +19,6 @@
 // Import 基本樣式
 // @import './base/fontStyle';
 @import './base/base';
-
-
 
 // Import 佈局樣式
 @import './layout/nav';
@@ -46,4 +42,4 @@
 @import "../../node_modules/bootstrap";
 
 // Import CSS RESET
-@import './base/reset';
+// @import './base/reset';

@@ -5,43 +5,12 @@
 	padding-top: 80px !important;
 	padding-bottom: 80px !important;
 
-	.card {
-		display: flex !important;
-		flex-direction: row !important;
-		flex-wrap: wrap !important;
-	}
-
-	.card-item {
-		display: block !important;
-		width: calc(100% / 3) !important; // 三欄式排版
-		padding-left: 12px !important;
-		padding-right: 12px !important;
-	}
-
-	/** 卡片最左邊及最右邊距離歸零 **/
-	.card-item:first-child {
-		padding-left: 0 !important;
-	}
-
-	.card-item:last-child {
-		padding-right: 0 !important;
-	}
-
-	.card-body img {
-		display: block;
-		max-width: 416px !important;
-		height: auto !important;
-		margin: 0 auto !important;
-	}
-
-	.card-body h3 {
-		color: $primary !important;
-		font-family: 'Roboto', sans-serif !important;
-		font-size: 48px !important;
-		font-weight: bold !important;
-		font-style: italic !important;
-		margin-top: 8px !important;
-		margin-bottom: 24px !important;
+	.card-title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 48px;
+		font-style: italic;
+		font-weight: 900;
+		color: $primary;
 	}
 }
 
@@ -49,13 +18,6 @@
 @include media-breakpoint-down(xxl) {
 	.classic-series-glass {
 
-		.card-item {
-			width: 100% !important; // 單欄式排版
-		}
-
-		.card-body img {
-			max-width: 336px !important;
-		}
 	}
 }
 
@@ -79,9 +41,7 @@
 // max-width:768 (寬度<= 576)
 @include media-breakpoint-down(sm) {
 	.classic-series-glass {
-		.card-body img {
-			max-width: 348px !important;
-		}
+
 	}
 }
 /**** end of professional ****/
