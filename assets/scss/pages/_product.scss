@@ -1,0 +1,160 @@
+.product-header {
+	.product-header-inner {
+
+        .product-header-1 {
+            max-width: 100%;
+            height: 240px;
+            background-image: url('../assets/images/product-header-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+                height: 136px !important;
+                background-image: url('../assets/images/product-header-sm-1.png');
+            }
+        }
+    
+        .product-header-2 {
+            max-width: 100%;
+            height: 240px;
+            background-image: url('../assets/images/product-header-2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+                height: 136px !important;
+                background-image: url('../assets/images/product-header-sm-2.png');
+            }
+        }
+
+        .product-header-3 {
+            max-width: 100%;
+            height: 240px;
+            background-image: url('../assets/images/product-header-3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+                height: 136px !important;
+                background-image: url('../assets/images/product-header-sm-3.png');
+            }
+        }
+
+        .product-header-4 {
+            max-width: 100%;
+            height: 240px;
+            background-image: url('../assets/images/product-header-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            @include media-breakpoint-down(lg) {
+                max-width: 100%;
+                height: 136px !important;
+                background-image: url('../assets/images/product-header-sm-4.png');
+            }
+        }
+	}
+}
+
+.product-content {
+    .header-title {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    
+        // mw-990  (寬度<= 990)
+        @include media-breakpoint-down(lg) {}
+    
+        // max-w:768 (寬度<= 768)
+        @include media-breakpoint-down(md) {
+            font-size: 42px;
+        }
+    
+        // max-w:768 (寬度<= 576)
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+        }
+    }
+    
+    .header-sub-title {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: 'Noto Sans TC', sans-serif;
+    
+        // mw-990  (寬度<= 990)
+        @include media-breakpoint-down(lg) {}
+    
+        // max-w:768 (寬度<= 768)
+        @include media-breakpoint-down(md) {
+            font-size: 32px;
+        }
+    
+        // max-w:768 (寬度<= 576)
+        @include media-breakpoint-down(sm) {
+            font-size: 24px;
+        }
+    }
+
+    .card-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-footer {
+        display: flex;
+    }
+
+    .card-title {
+        display: block !important;
+        font-size: 24px !important;
+        font-family: 'Roboto', sans-serif !important;
+        color: $black !important;
+        margin-bottom: 0 !important;
+    }
+
+    .card-text {
+        display: block !important;
+        font-size: 24px !important;
+        font-family: 'Roboto', sans-serif !important;
+        color: $primary !important;
+    }
+
+    .product-color1 {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: #5F3E2D;
+        border-radius: 4px;
+    }
+
+    .product-color2 {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: #B75929;
+        border-radius: 4px;
+    }
+}
+
+// max-width-990  (寬度<= 1400)
+@include media-breakpoint-down(xxl) {}
+
+// max-width-990  (寬度<= 1200)
+@include media-breakpoint-down(xl) {}
+
+// mw-990  (寬度<= 990)
+@include media-breakpoint-down(lg) {}
+
+// max-w:768 (寬度<= 768)
+@include media-breakpoint-down(md) {}
+
+// max-w:768 (寬度<= 576)
+@include media-breakpoint-down(sm) {}

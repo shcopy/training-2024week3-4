@@ -1,0 +1,215 @@
+.storeloc {
+	.storeloc-inner {
+		.header-title {
+			font-size: 48px;
+			font-weight: bold;
+			border-left: 8px solid $primary;
+			padding-left: 16px;
+			@include media-breakpoint-down(sm) {
+				font-size: 24px;
+			}
+		}
+
+		.card {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: 1px solid #00000020 !important;
+		}
+
+		.card-header {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: 1px solid #00000020 !important;
+			padding-left: 24px !important;
+		}
+
+		.card-body {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: 1px solid #00000020 !important;
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+			padding-left: 24px !important;
+		}
+
+		.card-footer {
+			background-color: rgba(0, 0, 0, 0) !important;
+			border: 1px solid #00000020 !important;
+			padding: 0 !important;
+		}
+
+		.card-title {
+			margin-top: 8px !important;
+			margin-bottom: 8px !important;
+			font-size: 24px !important;
+			font-weight: 400 !important;
+		}
+
+		.col-form-label {
+			font-size: 24px !important;
+			@include media-breakpoint-down(sm) {
+				font-size: 16px !important;
+			}
+		}
+
+		.form-select {
+			font-size: 18px !important;
+		}
+
+		/********************************/
+		.storeloc-content {
+            display: flex;
+            flex-direction: row;
+			
+			// max-width-1400  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				flex-direction: column;
+			}
+
+			// max-width-990  (寬度<= 1200)
+			@include media-breakpoint-down(xl) {
+				// flex-direction: column;
+			} 
+
+            // mw-990  (寬度<= 990)
+			 @include media-breakpoint-down(lg) {
+				// flex-direction: column;
+            } 
+
+            // max-w:768 (寬度<= 768)
+             @include media-breakpoint-down(md) {
+				// flex-direction: column;
+            } 
+
+            // max-w:768 (寬度<= 576)
+           /*  @include media-breakpoint-down(sm) {
+                flex-direction: column;
+            } */
+        }
+
+        /* 排版方式: 上下*/
+		.storeloc-info {
+            display: flex;
+            flex-direction: column;
+			max-width: 526px;
+
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				max-width: 100%;
+				flex-direction: row;
+				margin-bottom: 24px;
+			}
+
+			// max-width:768 (寬度<= 768)
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+				margin-bottom: 24px;
+			}
+
+			// max-width-1200  (寬度<= 1200)
+			// @include media-breakpoint-down(xl) {} 
+
+			// mw-990  (寬度<= 990)
+			// @include media-breakpoint-down(lg) {}
+
+            // max-w:768 (寬度<= 768)
+            // @include media-breakpoint-down(md) {} 
+
+            // max-w:768 (寬度<= 576)
+            // @include media-breakpoint-down(sm) {} 
+        }
+
+		.storeloc-photo {
+			max-width: 526px;
+
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				max-width: 50%;
+			}
+
+			// max-w:768 (寬度<= 768)
+			/* @include media-breakpoint-down(lg) {
+				width: 337px;
+			} */
+
+			// max-w:768 (寬度<= 768)
+			 @include media-breakpoint-down(md) {
+				max-width: 100%;
+			} 
+		}
+
+        /* 一般照片 */
+		.storeloc-photo-g {
+			display: none;
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				display: block;
+			}
+        }
+
+        /* 寬版照片 */
+		.storeloc-photo-w {
+			display: block;
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl){
+				display: none;
+			}
+        }
+
+		.storeloc-text {
+			max-width: 100%;
+
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				max-width: 50%;
+				margin-left: 24px;
+			}
+
+			// max-width:768 (寬度<= 768)
+			@include media-breakpoint-down(md) {
+				max-width: 100%;
+				margin-right: 0;
+			}
+		}
+
+		.storeloc-map {
+			max-width: 746px;
+			margin-left: 24px;
+
+			// max-width-990  (寬度<= 1400)
+			@include media-breakpoint-down(xxl) {
+				max-width: 100%;
+				margin-left: 0;
+			}
+
+			.storeloc-map-xxl {
+				display: block;
+				// max-width:768 (寬度<= 768)
+				@include media-breakpoint-down(md) {
+					display: none;
+				}
+			}
+			
+			.storeloc-map-sm {
+				display: none;
+				// max-width:768 (寬度<= 768)
+				@include media-breakpoint-down(md) {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+// max-width-1400  (寬度<= 1400)
+@include media-breakpoint-down(xxl) {}
+
+// max-width-1200  (寬度<= 1200)
+@include media-breakpoint-down(xl) {}
+
+// mw-990  (寬度<= 990)
+@include media-breakpoint-down(lg) {}
+
+// max-w:768 (寬度<= 768)
+@include media-breakpoint-down(md) {}
+
+// max-w:768 (寬度<= 576)
+@include media-breakpoint-down(sm) {}

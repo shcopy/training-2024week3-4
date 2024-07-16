@@ -33,13 +33,19 @@
 @import './layout/customer-recomendations-glass';
 @import './layout/contactus';
 
+@import './layout/product-nav';
+
+
+
 // Import 第三方庫樣式
 @import './vendors/_swiper';
 
 // Import 頁面樣式
 @import './pages/index';
+@import './pages/product';
+@import './pages/storeloc';
 
 @import "../../node_modules/bootstrap";
 
 // Import CSS RESET
-// @import './base/reset';
+@import './base/reset';

@@ -326,6 +326,8 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "black":      $black,  // *customm
+  "white" :     $white,  // *customm
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -442,10 +444,8 @@ $spacers: (
   50: $spacer * 12.5,  // 200 px
   51: $spacer * 12.75, // 204 px
   
-
-
-
   // 4 8 16 20 24 28 32 36 40 44 48 52 56 60
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -466,6 +466,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
+// $body-bg:                   $primary !default;  // *customm
+
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -578,7 +580,9 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
 $component-active-color:      $white !default;
-$component-active-bg:         $primary !default;
+
+// $component-active-bg:         $primary !default;
+$component-active-bg:         $black !default; // *custom
 
 // scss-docs-start caret-variables
 $caret-width:                 .3em !default;
@@ -907,7 +911,9 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $body-bg !default;
+// $input-bg:                              $body-bg !default;
+$input-bg:                              rgba($body-bg, 0) !default; // *custom
+
 $input-disabled-color:                  null !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
@@ -917,9 +923,14 @@ $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
-$input-border-radius-sm:                $border-radius-sm !default;
-$input-border-radius-lg:                $border-radius-lg !default;
+// $input-border-radius:                   $border-radius !default;
+$input-border-radius:                   0 !default; // *custom
+
+// $input-border-radius-sm:                $border-radius-sm !default;
+$input-border-radius-sm:                0 !default; // *custom
+
+// $input-border-radius-lg:                $border-radius-lg !default;
+$input-border-radius-lg:                0 !default; // *custom
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
@@ -1277,19 +1288,30 @@ $pagination-padding-x-lg:           1.5rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
+// $pagination-color:                  var(--#{$prefix}link-color) !default;
+$pagination-color:                  #555555 !default; // *custom
+
+
 $pagination-bg:                     $white !default;
-$pagination-border-radius:          $border-radius !default;
+
+// $pagination-border-radius:          $border-radius !default;
+$pagination-border-radius:          0 !default; // *custom
+
+
 $pagination-border-width:           $border-width !default;
 $pagination-margin-start:           ($pagination-border-width * -1) !default;
 $pagination-border-color:           $gray-300 !default;
 
-$pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
+// $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
+$pagination-focus-color:            $black !default; // *custom
+
 $pagination-focus-bg:               $gray-200 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
+// $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-color:            $black !default;  // *custom
+
 $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 

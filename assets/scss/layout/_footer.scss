@@ -7,26 +7,22 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 32px;
-	}
 
-	@include media-breakpoint-down(sd) {
-		// moible
-		.footer-contact {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			margin-bottom: 20px;
 		}
 	}
+
 
 	// start of footerbar
 	.footerbar-nav {
 		display: flex;
 		margin-bottom: 38px;
 		margin-top: 60px;
-	}
 
-	// 當轉變為手機板時隱藏區塊
-	@include media-breakpoint-down(sd) {
-		// moible
-		.footerbar-nav {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			display: none;
 		}
 	}
@@ -56,40 +52,33 @@
 	.socialbar-nav {
 		display: flex;
 		margin-top: 48px;
-	}
 
-	@include media-breakpoint-down(sd) {
-		// moible
-		.socialbar-nav {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			margin-top: 24px;
 		}
 	}
 
 	.socialbar-item {
 		margin-right: 32px;
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
+			margin-right: 8px;
+		}
 
 		img {
 			width: 48px;
+			// max-width:768 (寬度<= 576)
+			@include media-breakpoint-down(md) {
+				width: 24px;
+			}
 		}
 	}
 
-	// 抓取子層內的第一個子元素
-	.socialbar-item:first-child {}
 
 	// 抓取子層內的最後一個子元素。
 	.socialbar-item:last-child {
 		margin-right: 0;
-	}
-
-	@include media-breakpoint-down(sd) {
-		// moible
-		.socialbar-item {
-			margin-right: 8px;
-
-			img {
-				width: 24px;
-			}
-		}
 	}
 
 	.socialbar-link {
@@ -102,11 +91,9 @@
 	.contact {
 		padding-top: 24px;
 		padding-bottom: 32px;
-	}
 
-	@include media-breakpoint-down(sd) {
-		// moible
-		.contact {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			padding-top: 0;
 			padding-bottom: 0;
 		}
@@ -114,21 +101,19 @@
 
 	.contactbar-nav {}
 
-	@include media-breakpoint-down(sd) {
+	// max-width:768 (寬度<= 576)
+	@include media-breakpoint-down(md) {
 		// moible
 		.contactbar-nav {
 			margin-top: 24px;
 		}
 	}
 
-
 	.contactbar-item {
 		margin-bottom: 8px;
-	}
 
-	@include media-breakpoint-down(sd) {
-		// moible
-		.contactbar-item {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			display: flex;
 			align-items: center;
 		}
@@ -155,7 +140,8 @@
 		}
 	}
 
-	@include media-breakpoint-down(sd) {
+	// max-width:768 (寬度<= 576)
+	@include media-breakpoint-down(md) {
 		// moible
 		.contactbar-link {
 			font-size: 16px;
@@ -174,11 +160,9 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 		border-top: 1px solid $white;
-	}
 
-	@include media-breakpoint-down(sd) {
-		// moible
-		.copyright {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			display: block;
 			padding-top: 16px;
 			padding-bottom: 8px;
@@ -194,11 +178,9 @@
 	.copyrightbar-nav {
 		display: flex;
 		justify-content: space-between;
-	}
 
-	// moible
-	@include media-breakpoint-down(sd) {
-		.copyrightbar-nav {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			display: block;
 			margin-top: 8px;
 		}
@@ -206,12 +188,9 @@
 
 	.copyrightbar-item {
 		margin-right: 48px;
-	}
 
-	// moible
-	@include media-breakpoint-down(sd) {
-
-		.copyrightbar-item {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			margin-right: 0;
 			margin-bottom: 8px;
 		}
@@ -223,12 +202,8 @@
 	// 抓取子層內的最後一個子元素。
 	.copyrightbar-item:last-child {
 		margin-right: 0;
-	}
-
-	// moible
-	@include media-breakpoint-down(sd) {
-		
-		.copyrightbar-item:last-child {
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(md) {
 			margin-bottom: 24px;
 		}
 	}
