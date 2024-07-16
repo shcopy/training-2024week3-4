@@ -1,6 +1,6 @@
 .banner {
 	// height: 787px;
-	background-image: url('../assets/images/home-header.png') ;
+	background-image: url('/assets/images/home-header.png') ;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 
     // max-width:768 (寬度<= 768)
     @include media-breakpoint-down(md) {
-        background-image: url('../assets/images/home-header-sm.png');
+        background-image: url('/assets/images/home-header-sm.png');
 
         .banner_inner {
             padding-top: 144px;
