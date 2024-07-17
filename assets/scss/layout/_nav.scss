@@ -45,14 +45,6 @@
 	}
 }
 
-// max-width-990  (寬度<= 990)
-@include media-breakpoint-down(lg) {}
-
-// max-width:768 (寬度<= 768)
-@include media-breakpoint-down(md) {
-	
-}
-
 // max-width:768 (寬度<= 576)
 @include media-breakpoint-down(sm) {
 	.navbar {

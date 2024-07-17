@@ -17,7 +17,7 @@
 
 // ------------------- end of Configuration -------------------
 // Import 基本樣式
-// @import './base/fontStyle';
+@import './base/fontStyle';
 @import './base/base';
 
 // Import 佈局樣式
@@ -25,25 +25,15 @@
 @import './layout/header';
 @import './layout/footer';
 
-// Import 首頁樣式
-@import './layout/banner';
-@import './layout/professional';
-@import './layout/classic-series-glass';
-@import './layout/collaborative-design-glass';
-@import './layout/customer-recomendations-glass';
-@import './layout/contactus';
-
-@import './layout/product-nav';
-
-
-
 // Import 第三方庫樣式
-@import './vendors/_swiper';
+// @import './vendors/_swiper';
 
 // Import 頁面樣式
 @import './pages/index';
 @import './pages/product';
 @import './pages/storeloc';
+@import './pages/blog';
+@import './pages/qna';
 
 @import "../../node_modules/bootstrap";
 

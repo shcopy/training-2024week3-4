@@ -1,0 +1,23 @@
+.qna {
+	.qna-inner {
+		.header-title {
+			font-size: 48px;
+			font-weight: bold;
+			border-left: 8px solid $primary;
+			padding-left: 16px;
+			@include media-breakpoint-down(sm) {
+				font-size: 24px;
+			}
+		}
+
+        h3 {
+            font-size: 24px !important;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 20px !important;
+            font-weight: bold !important;
+        }
+	}
+}

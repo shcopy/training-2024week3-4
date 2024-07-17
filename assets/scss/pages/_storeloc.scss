@@ -197,19 +197,3 @@
 		}
 	}
 }
-
-
-// max-width-1400  (寬度<= 1400)
-@include media-breakpoint-down(xxl) {}
-
-// max-width-1200  (寬度<= 1200)
-@include media-breakpoint-down(xl) {}
-
-// mw-990  (寬度<= 990)
-@include media-breakpoint-down(lg) {}
-
-// max-w:768 (寬度<= 768)
-@include media-breakpoint-down(md) {}
-
-// max-w:768 (寬度<= 576)
-@include media-breakpoint-down(sm) {}

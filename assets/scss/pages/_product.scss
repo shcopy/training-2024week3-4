@@ -1,3 +1,55 @@
+/**** start of product-navbar ****/
+.product-navbar {
+	background: $white !important;
+
+	.navbar-inner {}
+
+	.navbar-nav {
+		display: flex !important;
+		flex-direction: row !important;
+		// justify-content: center !important;
+		// align-items: center !important;
+	}
+
+	.navbar-nav .active {
+		border-bottom: 8px solid $primary !important;
+	}
+
+	.navbar-item {
+		border: 1px solid #DCDCDC;
+		width: calc(100% / 3) !important;
+		text-align: center;
+	}
+
+	.navbar-link {
+		display: block !important;
+		color: $black !important;
+		font-size: 32px !important;
+		font-family: 'Roboto', sans-serif;
+		padding-top: 24px !important;
+		padding-bottom: 24px !important;
+
+		// max-w:768 (寬度<= 768)
+		@include media-breakpoint-down(md) {
+			font-size: 24px !important;
+			padding-top: 16px !important;
+			padding-bottom: 16px !important;
+		}
+
+		// max-w:768 (寬度<= 576)
+		@include media-breakpoint-down(sm) {
+			font-size: 16px !important;
+			padding-top: 16px !important;
+			padding-bottom: 16px !important;
+		}
+	}
+
+	.navbar-link:hover {}
+}
+
+/**** end of product-navbar ****/
+
+/**** start of product-header ****/
 .product-header {
 	.product-header-inner {
 
@@ -62,7 +114,9 @@
         }
 	}
 }
+/**** end of product-header ****/
 
+/**** start of product-content ****/
 .product-content {
     .header-title {
         font-size: 42px;
@@ -143,18 +197,4 @@
         border-radius: 4px;
     }
 }
-
-// max-width-990  (寬度<= 1400)
-@include media-breakpoint-down(xxl) {}
-
-// max-width-990  (寬度<= 1200)
-@include media-breakpoint-down(xl) {}
-
-// mw-990  (寬度<= 990)
-@include media-breakpoint-down(lg) {}
-
-// max-w:768 (寬度<= 768)
-@include media-breakpoint-down(md) {}
-
-// max-w:768 (寬度<= 576)
-@include media-breakpoint-down(sm) {}
+/**** end of product-content ****/

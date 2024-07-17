@@ -1,0 +1,166 @@
+/******* start of banner *******/
+
+
+.banner {
+	// height: 787px;
+	background-image: url('/assets/images/home-header.png') ;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.banner_inner {
+		padding-top: 296px;
+		padding-bottom: 296px;
+
+		text-align: right;
+
+		h2 {
+			color: $danger;
+			font-size: 36px;
+            font-weight: bold;
+		}
+		p {
+			color: $danger;
+			font-size: 64px;
+			font-weight: bold;
+		}
+	}
+
+    // max-width:768 (寬度<= 768)
+    @include media-breakpoint-down(md) {
+        background-image: url('/assets/images/home-header-sm.png');
+
+        .banner_inner {
+            padding-top: 144px;
+            padding-bottom: 144px;
+    
+            text-align: right;
+    
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+/******* end of banner *******/
+
+/**** start of professional ****/
+.professional {
+	background-color: $secondary;
+
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+
+	.card-title {
+		font-size: 24px;
+		font-weight: bold;
+		color: $danger;
+		text-align: center;
+	}
+
+	.card-text {}
+}
+
+/**** end of professional ****/
+
+/**** start of classic-series-glass ****/
+.classic-series-glass {
+	background-color: $white;
+
+	padding-top: 80px !important;
+	padding-bottom: 80px !important;
+
+	.card-title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 48px;
+		font-style: italic;
+		font-weight: 900;
+		color: $primary;
+	}
+}
+/**** end of classic-series-glass ****/
+
+
+/**** start of collaborative-design-glass ****/
+.collaborative-design-glass {
+    background-image: url('/assets/images/index-bg.png');
+
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+    .home-section4-1 {
+        max-width: 100%;
+        height: 240px;
+        background-image: url('/assets/images/home-section4-1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // max-width:768 (寬度<= 576)
+        @include media-breakpoint-down(sm) {
+            background-image: url('/assets/images/home-section4-1-sm.png');
+        }
+    }
+
+    .home-section4-2 {
+        max-width: 100%;
+        height: 240px;
+        background-image: url('/assets/images/home-section4-2.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        // max-width:768 (寬度<= 576)
+        @include media-breakpoint-down(sm) {
+            background-image: url('/assets/images/home-section4-2-sm.png');
+        }
+    }
+
+    .card-title {
+		background-color: $white;
+        color: $primary ;
+        font-family: 'Roboto', sans-serif;
+		font-size: 48px;
+		font-weight: bold ;
+		font-style: italic;
+        padding-top: 8px ;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+}
+/**** end of collaborative-design-glass ****/
+
+/**** start of customer-recomendations-glass ****/
+.customer-recomendations-glass {
+	padding-top: 80px ;
+	padding-bottom: 80px ;
+}
+/**** end of customer-recomendations-glass ****/
+
+/**** start of contactus ****/
+
+.contactus {
+    background-color: $secondary;
+
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	legend {
+		font-size: 20px;
+
+		// max-width:768 (寬度<= 768)
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
+
+		// max-width:768 (寬度<= 576)
+		@include media-breakpoint-down(sm) {
+			font-size: 16px;
+		}
+	}
+}
+/**** end of contactus ****/
